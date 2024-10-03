@@ -1,0 +1,35 @@
+.text-justify {
+    text-align: justify;
+}
+
+.bg-dark1 {
+    background-color: #213555;
+}
+
+.bg-medium-dark {
+    background-color: #4f709c;
+}
+
+.bg-medium-light {
+    background-color: #d8c4b6;
+}
+
+.bg-light {
+    background-color: #f5efe7;
+}
+
+.color-dark {
+    color: #213555;
+}
+
+.color-medium-dark {
+    color: #4f709c;
+}
+
+.color-medium-light {
+    color: #d8c4b6;
+}
+
+.color-light {
+    color: #f5efe7;
+}
