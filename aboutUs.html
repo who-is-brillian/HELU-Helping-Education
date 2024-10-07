@@ -255,6 +255,61 @@
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+
+    <script>
+
+    const aboutCard = document.getElementById("aboutCard");
+
+     aboutCard.addEventListener('mouseover', function() {
+        aboutCard.classList.replace('bg-medium-dark', 'bg-medium-light');
+        aboutCard.classList.replace('color-light' , 'color-dark')
+        aboutCard.style.transition = 'background-color 0.5s ease, color 0.5s ease';
+    });
+
+    aboutCard.addEventListener('mouseout', function() {
+        aboutCard.classList.replace('bg-medium-light', 'bg-medium-dark');
+        aboutCard.classList.replace('color-dark' , 'color-light')
+    });
+
+    const misiHelu = document.getElementById('misiHelu');
+    const misiBtn = document.getElementById('misiBtn');
+    const visiHelu = document.getElementById('visiHelu');
+    const visiBtn = document.getElementById('visiBtn');
+    const btnSee = document.getElementsByClassName('btn-see')
+
+   
+
+    function visible(button,article ){
+        article.style.height = "0px";
+        article.style.transition = '2s ease';
+
+        button.addEventListener('click', function(){
+            article.classList.toggle("opacity-0")
+            article.style.height = "90%"
+        })
+    }
+    visible(visiBtn, visiHelu)
+    visible(misiBtn, misiHelu)
+
+
+    lihatMisi = 'Lihat Misi';
+    lihatVisi = 'Lihat Visi';
+    function btnVisiMisi(button, textVM, ){
+        sembunyikanText = 'Sembunyikan'
+
+        button.addEventListener('click', function() {
+            if (button.textContent === textVM) {
+                button.textContent = sembunyikanText; 
+            } else {
+                button.textContent = textVM;
+            }
+        });
+    }
+btnVisiMisi(visiBtn, lihatVisi)
+btnVisiMisi(misiBtn, lihatMisi)
+
+
+    </script>
 </body>
 
 </html>
