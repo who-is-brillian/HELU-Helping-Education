@@ -49,11 +49,11 @@
     <section class="container " style="margin: 8rem auto;">
         <div class="row">
             <div class="col-12 col-md-4 mb-4 m-auto">
-                <img src="img/logoHelu.png" class="img-fluid" alt="Logo Helu">
+                <img src="img/logoHelu.png" id="logoAbout" class="img-fluid" alt="Logo Helu">
             </div>
             <div class="col-12 col-md-8">
                 <div
-                    class="card-body bg-medium-dark d-flex flex-column align-items-center mx-auto p-4 rounded-4 color-light">
+                    id="aboutCard" class=" card-body bg-medium-dark d-flex flex-column align-items-center mx-5 p-4 rounded-4 color-light">
                     <h2 class="text-center my-2">About Us</h2>
                     <p class="lh-sm px-md-5 text-justify fs-6">
                         <strong>HELU (Helping Education)</strong> adalah platform pembelajaran bahasa Inggris untuk
@@ -89,8 +89,11 @@
         <!-- Visi -->
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="custom-box bg-dark1 text-center p-3 rounded-top color-medium-light">Visi HELU</h2>
-                <article class="custom-box px-4 py-5 rounded-bottom-3 bg-medium-light color-dark  fs-6">
+                <section class="custom-box bg-dark1 text-center p-3 rounded-top color-medium-light"> 
+                    <h2> Visi HELU </h2> 
+                    <button id="visiBtn" type="button" class="btn btn-see bg-medium-dark color-medium-light btn-sm">Lihat Visi</button>
+                </section>
+                <article id="visiHelu" class="custom-box px-4 py-5 rounded-bottom-3 bg-medium-light color-dark mt-2 opacity-0  fs-6">
                     <p>Menjadi platform pembelajaran bahasa Inggris terdepan yang inovatif dan inklusif, membantu siswa
                         SMA/SMK mengembangkan keterampilan bahasa Inggris secara efektif, serta mempersiapkan mereka
                         untuk
@@ -104,8 +107,11 @@
         </div>
         <!-- Misi -->
         <div>
-            <h2 class="custom-box bg-dark1 color-medium-light text-center p-3 rounded-top">Misi HELU</h2>
-            <article class="custom-box bg-medium-light color-dark p-4 rounded-bottom-3 fs-6">
+            <section class="custom-box bg-dark1 text-center p-3 rounded-top color-medium-light"> 
+                <h2> Misi HELU</h2> 
+                <button id="misiBtn" type="button" class="btn bg-medium-dark color-medium-light btn-sm">Lihat Misi</button>
+            </section>
+            <article id="misiHelu" class="custom-box bg-medium-light color-dark p-4 rounded-bottom-3 mt-2 opacity-0 fs-6">
                 <ul>
                     <li>Menyediakan pembelajaran bahasa Inggris berkualitas tinggi dengan pendekatan design thinking
                         yang interaktif dan relevan.</li>
@@ -246,10 +252,9 @@
 
     <!-- About Us End -->
 
-
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>

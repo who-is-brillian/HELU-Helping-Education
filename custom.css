@@ -33,3 +33,8 @@
 .color-light {
     color: #f5efe7;
 }
+
+.btn-hover:hover {
+    background-color: #213555 ;
+    color: #f5efe7 ;
+}
