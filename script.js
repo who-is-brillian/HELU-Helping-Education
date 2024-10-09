@@ -71,5 +71,3 @@ flipCard4.addEventListener('click', function() {
   resetVisibility(nameMentors4, 5000);  
 });
 
-//login Page
-
