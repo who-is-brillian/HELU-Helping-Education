@@ -33,10 +33,10 @@
             <a class="nav-link fs-p fw-bold text-light " href="contact.html">Contact Us</a>
           </li>
           <li class="nav-item m-2">
-            <a class="btn btn-outline-primary" href="#">Sign In</a>
+            <a class="btn btn-outline-primary" href="login.html">Sign In</a>
           </li>
           <li class="nav-item m-2">
-            <a class="btn btn-outline-primary  " href="#">Sign Up</a>
+            <a class="btn btn-outline-primary  " href="signUp.html">Sign Up</a>
           </li>
         </ul>
       </div>
@@ -167,12 +167,12 @@
             <div class="row justify-content-center ">
               <!-- mentor 1 -->
               <div class="col-md-3 mb-4 ">
-                <div class="card card-custom text-center bg-medium-light">
+                <div class="card card-custom text-center bg-medium-light" id="card-1">
                   <img src="img/img1.jpg" class="object-fit-cover  rounded-circle mx-auto mt-3" width="150px" height="150px" alt="Nichole">
                   
-                  <div class="card-body  mt-3">
-                    <h5 class="card-title">Nichole</h5>
-                    <p class="card-text">Mentor Reading and Writing</p>
+                  <div class="card-body  mt-3 ">
+                    <h5 class="card-title nameMentor-1 d-none">Nichole</h5>
+                    <p class="card-text nameMentor-1 d-none">Mentor Reading and Writing</p>
                     <div class="social-links fs-4">
                       <a href="#" class="bi bi-facebook"></a>
                       <a href="#" class="bi bi-twitter"></a>
@@ -182,13 +182,13 @@
                 </div>
               </div>
               <!-- mentor 2 -->
-              <div class="col-md-3 mb-4">
+              <div class="col-md-3 mb-4" id="card-2" >
                 <div class="card card-custom text-center bg-medium-light ">
                   <img src="img/img2.jpg" class="object-fit-cover rounded-circle mx-auto mt-3" width="150px" height="150px" alt="Nichole">
                   
                   <div class="card-body  mt-3">
-                    <h5 class="card-title">Nichole</h5>
-                    <p class="card-text">Mentor Reading and Writing</p>
+                    <h5 class="card-title nameMentor-2 d-none">Nichole</h5>
+                    <p class="card-text nameMentor-2 d-none">Mentor Reading and Writing</p>
                     <div class="social-links fs-4">
                       <a href="#" class="bi bi-facebook"></a>
                       <a href="#" class="bi bi-twitter"></a>
@@ -198,13 +198,13 @@
                 </div>
               </div>
               <!-- mentor 3 -->
-              <div class="col-md-3 mb-4 ">
+              <div class="col-md-3 mb-4 "id="card-3" >
                 <div class="card card-custom text-center bg-medium-light ">
                   <img src="img/img3.jpg" class="object-fit-cover rounded-circle mx-auto mt-3" width="150px" height="150px" alt="Nichole">
                   
                   <div class="card-body mt-3">
-                    <h5 class="card-title">Nichole</h5>
-                    <p class="card-text">Mentor Reading and Writing</p>
+                    <h5 class="card-title nameMentor-3 d-none">Nichole</h5>
+                    <p class="card-text nameMentor-3 d-none">Mentor Reading and Writing</p>
                     <div class="social-links fs-4">
                       <a href="#" class="bi bi-facebook"></a>
                       <a href="#" class="bi bi-twitter"></a>
@@ -214,13 +214,13 @@
                 </div>
               </div>
               <!-- mentor 4 -->
-              <div class="col-md-3 mb-4">
+              <div class="col-md-3 mb-4" id="card-4" >
                 <div class="card card-custom text-center bg-medium-light ">
                   <img src="img/img4.jpeg" class="object-fit-cover rounded-circle mx-auto mt-3" width="150px" height="150px" alt="Nichole">
                   
                   <div class="card-body mt-3">
-                    <h5 class="card-title">Nichole</h5>
-                    <p class="card-text">Mentor Reading and Writing</p>
+                    <h5 class="card-title nameMentor-4 d-none">Nichole</h5>
+                    <p class="card-text nameMentor-4 d-none">Mentor Reading and Writing</p>
                     <div class="social-links fs-4">
                       <a href="#" class="bi bi-facebook"></a>
                       <a href="#" class="bi bi-twitter"></a>
@@ -267,17 +267,16 @@
 
               <!-- Kolom 3: Social Links dengan Zoom pada gambar -->
               <div class="col-md-4 social-links">
-                  <h3>Connect With Us</h3>
-                  <ul class="list-unstyled fs-4 fs-4">
-                      <li><i class="bi bi-youtube text-danger"></i><a class="fs-5 text-light text-decoration-none" href="#"> HELU Official</a></li>
-                      <li><i class="bi bi-facebook text-primary"></i><a class="fs-5 text-light text-decoration-none" href="#"> HELU Official</a></li>
-                      <li><i class="bi bi-linkedin text-primary"></i><a class="fs-5 text-light text-decoration-none" href="#"> HELU Official</a></li>
-                      <li><i class="bi bi-whatsapp text-success"></i><a class="fs-5 text-light text-decoration-none" href="#"> +626764653657</a></li>
-                      <li><i class="bi bi-envelope text-light "></i><a class="fs-5 text-light text-decoration-none" href="#"> Heluofficial@gmail.com</a></li>
-                      
-                  </ul>
-                  
-              </div>
+                <h3>Connect With Us</h3>
+                <ul class="list-unstyled fs-4 fs-4">
+                    <li><i class="bi bi-youtube text-danger" id="youtube"></i><a class="fs-5 text-light text-decoration-none d-none" href="#" id="textYt"> HELU Official</a></li>
+                    <li><i class="bi bi-facebook text-primary" id="facebook"></i><a class="fs-5 text-light text-decoration-none d-none" href="#"  id="textFb"> HELU Official</a></li>
+                    <li><i class="bi bi-linkedin text-primary" id="linkedin"></i><a class="fs-5 text-light text-decoration-none d-none" href="#"  id="textLi"> HELU Official</a></li>
+                    <li><i class="bi bi-whatsapp text-success" id="whatsapp"></i><a class="fs-5 text-light text-decoration-none d-none" href="#"  id="textWa"> +626764653657</a></li>
+                    <li><i class="bi bi-envelope text-light" id="email"></i><a class="fs-5 text-light text-decoration-none d-none" href="#"  id="textEm"> Heluofficial@gmail.com</a></li>
+                    
+                </ul>
+                </div>
               <!-- Akhir Kolom 3 -->
           </div>
           <!-- Akhir bagian grid (row) Bootstrap -->
@@ -286,5 +285,10 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script src="script.js">
+      
+    </script>
 </body>
 </html>
