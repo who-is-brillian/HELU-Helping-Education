@@ -1,3 +1,7 @@
+body{
+    background-color: #DFF5FF;
+}
+
 .text-justify {
     text-align: justify;
 }
@@ -7,11 +11,15 @@
 }
 
 .bg-medium-dark {
-    background-color: #4f709c;
+    background-color: #7C93C3;
 }
 
 .bg-medium-light {
     background-color: #d8c4b6;
+}
+
+.bg-snow{
+    background-color: #DFF5FF;
 }
 
 .bg-light {
@@ -38,3 +46,4 @@
     background-color: #213555 ;
     color: #f5efe7 ;
 }
+
